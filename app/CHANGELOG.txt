@@ -1,0 +1,63 @@
+CHANGELOG:
+6/3/2019 - Ryan Ng
+- New users can either join or create groups
+6/3/2019 - Ryan Ng
+- Added anonymous post feature for message board. Also cleaned it up to make it look better
+6/3/2019 - Ryan Ng
+- Finished message board. Will work on making it more aesthetically pleasing
+- Also added a logo for Message Board on the landing activity
+5/30/2019 - Ryan Ng
+- New users have to join a group before going to the landing page. Will work on giving users an option to either join or create a group.
+- Fixed bug that would cause the landing page to say "Welcome home, null" instead of "Welcome home, <USERNAME>" when a new account is created
+- Fixed bug that would cause Split Bills to crash when inserting a new item
+5/28/2019 - Chuangbo Tong
+- minor changes on UI
+5/26/2019 - Brix Tanhueco
+- One thing that was causing us huge issues was Firebase, it often changes the field key name (like changing groupName to groupname)
+- I'm unsure if this is still an issue, but lol who tf knows. 
+- Added some basic logic shit when it comes to joining a group, you can't join a group you're already in, but u can still join other's groups
+- But if you join other's groups, the rules for chores become more difficult, so lol.
+
+- Created a new "Payments" Object, this should handle rent splitting / supplies price division
+- We should consider implementing an activity with multiple tabs to view charges, view people who haven't paid you, your running total, etc. 
+- Consider implementing a checkbox into payments also
+- Probably gonna implement "open Venmo" etc. 
+5/21/2019 - Chuangbo Tong
+- Implemented supply page, so now you could add and delete supplies from that page, and you could specify the user, the quantity and price of
+the supply.
+- Found the issue in Joining groups and create groups that would cause an casting error, I fixed it but whenever joining groups it would 
+enter an infinite loop that keeps adding the current user to that group account in firebase, but my laptop broke so I couldn't do anything
+about it.
+
+5/19/2019 - Brix Joshua Tanhueco
+- IMPLEMENTATION IDEA: We should probably prompt the user to either join a group or create a group on sign in
+- IMPLEMENTATION IDEA: We should prob still create a database with "user nodes" to check if they're in a group
+- ERROR: I noticed that once a user starts the chore activity, the chores don't pop up at first.
+- FIXED: Added password checking into groups
+
+- CHANGED: Changed the GROUP type user arrayList to STRING instead of the raw user value. This allowed for password checking but fucked up 
+--something in the ChoresACtivity? <-Jk looks like I fixed it by wiping the database and changing some map code
+
+
+5/18/2019 - Ryan Ng
+- Changed the group data structure
+    - Originally groups had 3 fields, "ADMIN", "groupName", "groupPass"
+        - Added an ArrayList field called "users" that has all the members of a group
+        - Also added an ArrayList field called "chores" that was supposed to reference the chores, but I'll probably end up removing it later,
+        havent used it at all       
+- Added a join group functionality
+- Made changes to "ChoresActivity.java" and "CHORES_OBJECT.java"
+    - Added an extra field in the CHORES_OBJECT: a group ID
+    - Now in the chores activity, users can only see chores that were inputted from users in their same group
+
+5/17/2018 - Brix Joshua Tanhueco
+- Added logouts using a menu in toolbar, you can disregard
+the "Logout" button on the landing activity, that was used for debugging
+- Added rent splitting activity, but need to add scrollviews and etc. after groups are
+implemented
+- Deleted some minor things also, idk if they're required, if so please lmk:
+    - Deleted the "finish()" after launching chores activity since we want users to
+      go back to the main menu
+-Implemented a progress bar on logins + create accounts, thinking about implementing this to
+ chores? idk.
+-Created "groups" but having difficulty accessing the "Users"

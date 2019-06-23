@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1003064802672",
+    "firebase_url": "https://easyliving-b5a08.firebaseio.com",
+    "project_id": "easyliving-b5a08",
+    "storage_bucket": "easyliving-b5a08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003064802672:android:e684f9568dc688be",
+        "android_client_info": {
+          "package_name": "com.btanhuecrng13ctong3.easyliving"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003064802672-rj73ckt2qkbs00ca7ro0cdb9c6fam6lo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.btanhuecrng13ctong3.easyliving",
+            "certificate_hash": "6609b21374f62a85d04cb2b59ec308b41446cbcb"
+          }
+        },
+        {
+          "client_id": "1003064802672-gbonlcab4d5t0d0mroa42m4avaplq6va.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.btanhuecrng13ctong3.easyliving",
+            "certificate_hash": "12494c94b464f6edce476d3c813c0c676175620a"
+          }
+        },
+        {
+          "client_id": "1003064802672-2klf7qkst4rcbp4t8170a9ohge0om23t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdIekHJMbyiadAyA2xSUCqOx2kJGLp9SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003064802672-2klf7qkst4rcbp4t8170a9ohge0om23t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

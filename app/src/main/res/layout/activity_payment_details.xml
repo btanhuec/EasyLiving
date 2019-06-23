@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paymentDetails">
+
+    <TextView
+        android:id="@+id/unused"
+        android:layout_width="220dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="111dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Original Price"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/detailTable"
+        app:layout_constraintEnd_toStartOf="@+id/ogPrc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/finPrc"
+        android:layout_width="120dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="right|center_vertical"
+        android:text="DEFAULT"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ogPrc" />
+
+    <TextView
+        android:id="@+id/ogPrc"
+        android:layout_width="120dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="right|center_vertical"
+        android:text="DEFAULT"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="409dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="DEFAULT"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/unused1"
+        android:layout_width="225dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Remaining Owed"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/finPrc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unused" />
+
+    <TableLayout
+        android:id="@+id/detailTable"
+        android:layout_width="392dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unused">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="10dp"
+            android:layout_height="27dp" />
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/purchaser"
+        android:layout_width="331dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/itemName"
+        app:layout_constraintStart_toStartOf="@+id/itemName"
+        app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+</android.support.constraint.ConstraintLayout>
